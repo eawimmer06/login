@@ -8,7 +8,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 @Service
+private static final String ADMIN_INVITE_CODE = "1234";
 public class RegistrationService {
     private final AppUserRepository users;
     private final PasswordEncoder passwordEncoder;
@@ -32,9 +34,9 @@ public class RegistrationService {
 
         Role role = Role.USER;
         if (requestedRole == Role.ADMIN) {
-            if (adminInviteCode.isBlank() || !adminInviteCode.equals(inviteCode)) {
-                throw new IllegalArgumentException("A valid administrator invite code is required.");
-            }
+             if (!ADMIN_INVITE_CODE.equals(adminInviteCode)) {
+            throw new IllegalArgumentException("Invalid admin invite code.");
+        }
             role = Role.ADMIN;
         }
 
