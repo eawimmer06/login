@@ -6,7 +6,12 @@ header {
     background-color: #9a1830;
     font-family: "Segoe UI", Arial, sans-serif;
     color: white;
+    body {
+    background-color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 12px 24px;
 }
+
 
 button {
     background-color: #9a1830;
