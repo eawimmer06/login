@@ -3,11 +3,10 @@ header {
     font-family: "Segoe UI", Arial, sans-serif;
     color: white;
     padding: 12px 24px;
+    border-radius: 10px;
 }
 body {
-    color: white;
     font-family: "Segoe UI", Arial, sans-serif;
-    padding: 12px 24px;
 }
 
 
@@ -20,4 +19,9 @@ button {
     cursor: pointer;
     transition: 0.2s;
     color: white;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
 }
