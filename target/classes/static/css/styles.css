@@ -9,4 +9,10 @@ header {
 
 button {
     background-color: #9a1830;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
 }
