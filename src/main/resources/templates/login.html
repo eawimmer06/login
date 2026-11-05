@@ -6,7 +6,7 @@
 </head>
 <body>
 <main class="panel">
-  <h1>Log in</h1>
+  <header><h1>Log in</h1></header>
   <p class="notice error" th:if="${param.error}">Incorrect username or password. Please try again.</p>
   <p class="notice success" th:if="${param.registered}">Account created. You can now log in.</p>
   <p class="notice success" th:if="${param.logout}">You have been logged out.</p>

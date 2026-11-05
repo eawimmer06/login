@@ -2,6 +2,7 @@ package ca.example.login.model;
 
 import jakarta.persistence.*;
 
+
 @Entity
 @Table(name = "app_users")
 public class AppUser {
