@@ -5,6 +5,7 @@ body {
 header {
     background-color: #9a1830;
     font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
 }
 
 button {
@@ -15,4 +16,5 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
+    color: white;
 }
