@@ -7,6 +7,11 @@ header {
 }
 body {
     font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
 }
 
 
@@ -22,6 +27,5 @@ button {
 }
 
 form {
-  justify-content: center;
-  align-items: center;
+  padding: 30x;
 }
